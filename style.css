@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0%;
+    background-color: black;
+}
+
+.home {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* height: 642px; */
+    width: 960px;
+    margin-inline: auto;
+    max-width: 100%;
+    padding-block: 150px;
+}
+
+.opening-text {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 60px;
+    font-weight: 500;
+}
+#hello {
+    content: "Bonjout";
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+#opening-text-3 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.photo {
+    height: 400px;
+    width: 500px;
+    background-image: url(images/rehan-cropped.jpg);
+    background-repeat: no-repeat;
+    background-position: 82%;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.about {
+    display: flex;
+    color: white;
+    width: 960px;
+    margin-inline: auto;
+    max-width: 100%;
+    padding-block: 150px;
+    
+}
+
+.photo2 {
+    height: 400px;
+    width: 500px;
+    background-image: url(images/Vidya.jpg);
+    background-repeat: no-repeat;
+    background-position: 55%;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    /* background-color: aqua; */
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 60px;
+    font-size: 700;
+    font-family: 'Montserrat';
+}
+
+#about-text-1 {
+    padding: 50px;
+    padding-top: 16px;
+    font-size: 30px;
+    font-size: 400;
+}
+
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#nav-bar {
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem 0.5rem;
+    align-items: center;
+    height: 30px;
+    width: 450px;
+    background-color: #535353aa;
+    border-radius: 20px;
+    font-family: "Montserrat";
+    backdrop-filter: blur(10px);
+
+    position: fixed;
+    z-index: 999;
+    top: 20px;
+    right: 20px;
+}
+#nav-bar:hover {
+    transition: 0.2s;
+    padding: 1.44rem 0.6rem;
+}
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+#photo {
+    height: 250px;
+    width: 250px;
+    background-image: url(images/rehan-nosmile.jpg);
+    background-size: cover;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 570px;
+}
+.skill-wrapper {
+    overflow: hidden;
+    width: 20%;
+}
+
+.skill-image {
+    transition: 0.5s;
+    filter: grayscale(75%);
+    height: 100%;
+}
+#skill1 {
+    background-image: url(images/Python.jpg);
+    background-repeat: no-repeat;
+    background-position: 82%;
+    background-size: cover;
+}
+#skill2 {
+    background-image: url(images/Front-end.jpg);
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-size: cover;
+}
+#skill3 {
+    background-image: url(images/Illustrator.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#skill4 {
+    background-image: url(images/bruhgang.png);
+    background-repeat: no-repeat;
+    background-position: 25%;
+    background-size: cover;
+}
+#skill5 {
+    background-image: url(images/01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.skill-wrapper:hover .skill-image {
+    transition: 0.5s;
+    filter: grayscale(0%);
+    height: calc(100% - 50px);
+}
+
+.skill-name {
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "Montserrat";
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+.next-section {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    justify-content: center;
+}
+.next-button {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Montserrat";
+
+    align-self: center;
+    height: 40px;
+    width: 150px;
+}
+.next-button:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.projects-container {
+    padding-top: 50px;
+}
+.project-wrapper {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-block: 28px;
+}
+.project-name {
+    margin-block: auto;
+}
+.project-name a {
+    color: white;
+}
+
+.tilt-container {
+    width: 500px;
+    perspective: 6000px; /* Adds depth */
+}
+
+.tilt-image {
+    width: 100%; /* Make image responsive */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+.links {
+    color: white;
+    align-items: center;
+}
+
+#CONTACT {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 60px;
+    padding-block: 30px;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 24px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+input, textarea, button {
+    margin: 4px 0;
+    padding: 8px;
+}
+
+#name, #email, #message, #send {
+    height: 50px;
+    width: 600px;
+}
+
+#message {
+    height: 300px;
+}
+
+#Send {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-block: 16px;
+    font-size: 20px;
+    font-family: "Montserrat";
+    align-self: center;
+    height: 40px;
+    width: 300px;
+}
+
+#Send:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px) {
+
+    .home {
+        width: 840px;
+    }
+
+    .about {
+        width: 840px;
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+
+    .home {
+        width: 720px;
+    }
+
+}
+
+@media only screen and (max-width:790px) {
+    
+    .home {
+        flex-direction: column;
+        padding-inline: 32px;
+        gap: 40px;
+    }
+    .about {
+        flex-direction: column;
+        padding-inline: 32px;
+        gap: 40px;
+    }
+    .photo {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width:580px) {
+    #nav-bar {
+        display: none;
+    }
+    .home {
+        padding-top: 100px;
+    }
+    .project-wrapper {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+    .tilt-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .skill-wrapper {
+        width: 50%;
+        flex-grow: 1;
+    }
+    #navbar {
+        margin-inline: auto;
+    }
+    .home {
+        flex-wrap: wrap;
+        padding-inline: 16px;
+    }
+    #hello, #opening-text-3 {
+        font-size: 35px;
+    }
+    /* .photo {
+        width: 80%;
+    } */
+}
+
+@media only screen and (max-width: 400px) {
+    #opening-text-2 {
+        font-size: 50px;
+    }
+}
